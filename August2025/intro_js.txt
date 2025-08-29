@@ -1,0 +1,29 @@
+statement: unit of instruction made up of one and more line respresnts an action (ex. let myVar = 4;)
+
+block statement: any number of statements inside a {} block
+
+expression: unit of code that results in value (ex. 2+2 or grouping operator (2*2) + 2)
+
+weak typing: value doesnt need to explicitly marked as specific type 
+and through type coercion you can do things like adding a num with a string
+
+case sensitivity: true, white space insensitive
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+Data types : 
+1) primitives -> a value with no wrapper or property of its own
+- primitive literals are immutable for example a bool variable isOk can be true and then
+reassigned as false but literal true can never respresnts another value other than true
+
+seven primitive data types in JS are as below:
+1) Numbers (2) strings (3) booleans (4) null (5) undefined (6) Bigint (7) Symbol
+
+1] Number : value is made up of any series of numeric characters 
+can also represent things like NaN and Infinity
+
+when a value is passed to Number() function it becomes number
+
+passing false or null returns 0 while passing true returns 1 if value cant be converted it says NaN (ex. undefined)
+
+
