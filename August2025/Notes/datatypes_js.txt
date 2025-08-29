@@ -1,0 +1,52 @@
+Primitive DataTypes:  (a value with no wrapper or property of its own)
+
+1] Number : value is made up of any series of numeric characters 
+can also represent things like NaN and Infinity
+when a value is passed to Number() function it becomes number
+passing false or null returns 0 while passing true returns 1 if value cant be converted it says NaN (ex. undefined)
+Number() isnt much used because it doenst match data type with numerical literals 
+like Number(15) == 15 returns false
+JS have only one number type -2^1024 and 2^1024
+before JS stores any number it converts it into binary floating point also called float
+floating point > -(2^53-1) and (2^53-1) 
+Number Operators > +, -, *, /, ++, --, ** (2**4 = 16), %
+Mathematical assignment > +=,-=, *=, /=, **=, %=
+Infinity -> Divide by zero
+NaN -> not a number for example Number('xyz'), "two" ** 2, parseInt(undefined);
+
+2] string : any set of characters between '' or "" or `` is a string primitive.
+Series of characters enclosed in quotation marks are called string literals 
+ex. ["I'm a string"] -> I'm a string
+\ escape characters -> ['"I\'m a string," I Said.']
+String object through String() function
++ is a concatenation operator
+Template literal `The result is ${2+4}`
+
+3] Boolean -> Boolean(NaN) -> false, Boolean(-0) -> false, Boolean(5) -> true,
+Boolean("false") -> true
+
+4] absense of value -> null and undefined
+null is primitive but type of null is an object -> error intentionally left
+undefined -> primitive value to varibale just declared or value of an operation that doesnt
+returns anything
+ex. -> function MyFunc() {} -> undefined, (function(){return;}) -> undefined
+null defines a value intentionally left blank
+while undefined represents lack of any significant value
+null == undefined -> Loose equality operator = true
+null === undefined -> Strict equality operator = true
+
+null is a reserved keyword while undefined is a property of global object.
+
+5] BigInt -> ex 99999n or BigInt(99999) typeof BigInt(9999) is bigint
+-> 9999 + 9999n gives an error
+
+6] Symbol
+-> two strings can be strictly equal for ex. string() === string() can be true
+but two Symbol cant be equal Symbol() === Symbol() cant be true they are Unqie
+ex. let mySymbol = Symbol("My Symbol")
+mySymbol.description
+-> "My Symbol"
+2nd way -> let sharedSymbol = Symbol.for("mySymbol");
+sharedSymbol === Symbol.for("mySymbol") -> true
+Symbol.keyFor(sharedSymbol) => "mySymbol" 
+

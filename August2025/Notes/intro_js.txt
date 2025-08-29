@@ -18,12 +18,3 @@ reassigned as false but literal true can never respresnts another value other th
 
 seven primitive data types in JS are as below:
 1) Numbers (2) strings (3) booleans (4) null (5) undefined (6) Bigint (7) Symbol
-
-1] Number : value is made up of any series of numeric characters 
-can also represent things like NaN and Infinity
-
-when a value is passed to Number() function it becomes number
-
-passing false or null returns 0 while passing true returns 1 if value cant be converted it says NaN (ex. undefined)
-
-
