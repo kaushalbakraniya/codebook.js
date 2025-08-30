@@ -1,2 +1,13 @@
 vairbale is a data structure that assign a representative name to a value
 vairbale's name is called an identifier
+
+example identifier: 1a -> not valid, $a -> valid
+
+let & var - similiar block scope and global scope  
+const - value can't be changed
+
+scope - { let num = 1 } -> block,let num = 1 -> global
+
+implied gloabl -> myvar = "xyz"
+
+declare but uninitiaized - undefined
