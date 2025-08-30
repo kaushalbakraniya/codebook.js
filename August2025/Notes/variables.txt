@@ -1,0 +1,2 @@
+vairbale is a data structure that assign a representative name to a value
+vairbale's name is called an identifier
